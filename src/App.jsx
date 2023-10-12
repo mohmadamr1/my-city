@@ -15,7 +15,7 @@ function App() {
           element: < Home />,
         },
         {
-          path: "Ho2me/",
+          path: "/Ho2me",
           element: < Ho2me/>,
         },
       ],
