@@ -1,7 +1,9 @@
-import Home from "./components/Home";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Sharedlsyout from "./components/Sharedlsyout";
-import Ho2me from "./components/Ho2me";
+import Botton from "./components/Botton";
+import Navbar from "./components/Navbar";
+
+
 
 function App() {
 
@@ -10,14 +12,17 @@ function App() {
       path: "/",
       element: <Sharedlsyout/>,
       children: [
+
         {
-          path: "/",
-          element: < Home />,
+          path: "/botton",
+          element: < Botton />,
         },
         {
-          path: "/Ho2me",
-          element: < Ho2me/>,
+          path: "/navbar",
+          element: < Navbar />,
         },
+    
+    
       ],
     },
   ]);
